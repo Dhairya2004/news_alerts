@@ -125,7 +125,7 @@
         // Add click event to search button
         document.getElementById("search-btn").addEventListener("click", function () {
             // Open 25 new tabs with tech-related searches
-            for (let i = 0; i < 25; i++) {
+            for (let i = 0; i < 32; i++) {
                 const topic = topics[i % topics.length];
                 window.open("https://www.bing.com/search?q=" + encodeURIComponent(topic));
             }
