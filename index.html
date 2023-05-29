@@ -67,67 +67,12 @@
         integrity="sha384-hplHzSxK0V7f+SmzjKz7ayFb2nJlXe5KjDEmLmD5r5m5tKpKyb+GWT3qD/3ujqA9"
         crossorigin="anonymous"></script>
     <script>
-        // List of tech-related topics
-        const topics = [
-            "Artificial Intelligence vs. Machine Learning: What's the difference?",
-            "How does blockchain ensure security and transparency?",
-            "The future of cloud computing: Trends and predictions",
-            "Why is cybersecurity important in today's digital world?",
-            "Exploring the potential of quantum computing",
-            "Data science: Unveiling insights from big data",
-            "Internet of Things (IoT): Connecting the physical world",
-            "The impact of virtual reality in various industries",
-            "Mobile app development: Native vs. hybrid apps",
-            "Understanding network security protocols",
-            "The role of robotics in automation and beyond",
-            "How does augmented reality enhance user experiences?",
-            "Web development frameworks: A comparison",
-            "Exploring the potential of 5G technology",
-            "The rise of e-commerce: Trends and challenges",
-            "Machine learning algorithms: Supervised vs. unsupervised",
-            "The power of natural language processing (NLP)",
-            "The future of self-driving cars: Advancements and concerns",
-            "Big data analytics: Driving business decisions",
-            "Understanding the basics of computer networks",
-            "Cybersecurity threats and prevention measures",
-            "Exploring the world of bioinformatics",
-            "The role of AI in healthcare innovation",
-            "The evolution of user interfaces: From command-line to GUI",
-            "The impact of social media on society",
-            "The rise of wearable technology",
-            "Cloud storage vs. local storage: Pros and cons",
-            "The role of data visualization in data analysis",
-            "Exploring the possibilities of 3D printing",
-            "The future of renewable energy technology",
-            "The role of algorithms in everyday life",
-            "How do search engines work?",
-            "The importance of user experience (UX) design",
-            "The potential of edge computing in IoT",
-            "Exploring the ethical implications of AI",
-            "The role of data privacy in the digital age",
-            "The impact of automation on the job market",
-            "The benefits and challenges of migrating to the cloud",
-            "The role of chatbots in customer service",
-            "Exploring the world of cryptocurrency",
-            "The future of virtual assistants: AI-powered voice technology",
-            "The rise of DevOps: Collaboration and efficiency",
-            "Exploring the potential of biometric authentication",
-            "The impact of video streaming on traditional TV",
-            "The role of UX writing in digital product design",
-            "The importance of responsive web design",
-            "The potential of Internet of Things (IoT) in smart cities",
-            "The challenges of data governance and compliance",
-            "The role of cloud computing in remote work",
-            "Exploring the potential of nanotechnology",
-        ];
-
-
         // Add click event to search button
         document.getElementById("search-btn").addEventListener("click", function () {
-            // Open 25 new tabs with tech-related searches
+            // Open 32 new tabs with random searches
             for (let i = 0; i < 32; i++) {
-                const topic = topics[i % topics.length];
-                window.open("https://www.bing.com/search?q=" + encodeURIComponent(topic));
+                const searchTerm = Math.random().toString(36).substring(2, 8); // Generate a random search term
+                window.open("https://www.bing.com/search?q=" + encodeURIComponent(searchTerm)); // Open a new tab with the search term
             }
         });
     </script>
